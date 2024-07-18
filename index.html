@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The History of Heavy Metal</title>
+    <style>
+        body {
+            font-family: 'Metal Mania', cursive;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            text-transform: uppercase;
+            color: #f00;
+            text-shadow: 2px 2px 4px #600;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #f00;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .entry {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .entry::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: #f00;
+            border: 4px solid #ff0;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid #f00;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #f00;
+        }
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid #f00;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #f00 transparent transparent;
+        }
+        .right::after {
+            left: -16px;
+        }
+        .content {
+            padding: 20px 30px;
+            background-color: #222;
+            position: relative;
+            border-radius: 6px;
+        }
+        .spotify-embed {
+            margin-top: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .pentagram {
+            width: 60px;
+            height: 60px;
+        }
+        .pentagram svg {
+            width: 100%;
+            height: 100%;
+            fill: #f00;
+            transform: rotate(180deg);
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .timeline::after {
+                left: 31px;
+            }
+            .entry {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .entry::before {
+                left: 60px;
+                border: medium solid #f00;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent #f00 transparent transparent;
+            }
+            .left::after, .right::after {
+                left: 15px;
+            }
+            .right {
+                left: 0%;
+            }
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+            .pentagram {
+                width: 50px;
+                height: 50px;
+                margin: 10px 0;
+            }
+            .content {
+                padding: 15px;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="pentagram">
+                <svg viewBox="0 0 100 100">
+                    <path d="M50 5 L61 40 L98 40 L68 62 L79 95 L50 75 L21 95 L32 62 L2 40 L39 40 Z" />
+                </svg>
+            </div>
+            <h1>The History of Heavy Metal</h1>
+            <div class="pentagram">
+                <svg viewBox="0 0 100 100">
+                    <path d="M50 5 L61 40 L98 40 L68 62 L79 95 L50 75 L21 95 L32 62 L2 40 L39 40 Z" />
+                </svg>
+            </div>
+        </div>
+        <div class="timeline">
+            <div class="entry left">
+                <div class="content">
+                    <h2>1960s-1970s: The Birth of Heavy Metal</h2>
+                    <p>Heavy metal emerged from blues rock, psychedelic rock, and acid rock. Black Sabbath's self-titled debut album in 1970 is often considered the first true heavy metal album.</p>
+                    <div class="spotify-embed">
+                        <iframe src="https://open.spotify.com/embed/track/3Jnxngdff0lVu2rza1GVx6" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="entry right">
+                <div class="content">
+                    <h2>1970s-1980s: Doom Metal Emerges</h2>
+                    <p>Doom metal, characterized by slow tempos, low-tuned guitars, and a heavy, oppressive sound, emerged as a distinct subgenre. Bands like Pentagram and Saint Vitus pioneered this style, drawing heavy influence from Black Sabbath.</p>
+                    <div class="spotify-embed">
+                        <iframe src="https://open.spotify.com/embed/track/3XbLr22UdBHR9ixgfGSipW" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="entry left">
+                <div class="content">
+                    <h2>1980s: The New Wave of British Heavy Metal and Thrash Metal</h2>
+                    <p>Bands like Iron Maiden and Judas Priest gained popularity. Thrash metal emerged with Metallica, Slayer, Megadeth, and Anthrax leading the charge.</p>
+                    <div class="spotify-embed">
+                        <iframe src="https://open.spotify.com/embed/track/5IX4TbIR5mMHGE4wiWwKW0" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="entry right">
+                <div class="content">
+                    <h2>Late 1980s-Early 1990s: Death Metal and Black Metal</h2>
+                    <p>Death metal, characterized by growled vocals and extreme speed, emerged with bands like Death and Morbid Angel. Black metal, known for its raw production and anti-Christian themes, gained notoriety in Norway.</p>
+                    <div class="spotify-embed">
+                        <iframe src="https://open.spotify.com/embed/track/3fkCcM1txNmc5YsqfwiAQp" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="entry left">
+                <div class="content">
+                    <h2>1990s: Power Metal and Progressive Metal</h2>
+                    <p>Power metal, with its fantasy themes and clean vocals, gained popularity with bands like Helloween and Blind Guardian. Progressive metal, combining complex compositions with metal intensity, emerged with bands like Dream Theater.</p>
+                    <div class="spotify-embed">
+                        <iframe src="https://open.spotify.com/embed/track/5CPXR6lDTvngxtmMZxnWmC" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="entry right">
+                <div class="content">
+                    <h2>1990s-2000s: Nu Metal and Groove Metal</h2>
+                    <p>Nu metal fused elements of hip-hop and alternative rock with metal, popularized by bands like Korn and Limp Bizkit. Groove metal, characterized by its emphasis on rhythm, was led by Pantera.</p>
+                    <div class="spotify-embed">
+                        <iframe src="https://open.spotify.com/embed/track/5cZqsjVs6MevCnAkasbEOX" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="entry left">
+                <div class="content">
+                    <h2>2000s-Present: Metalcore and Djent</h2>
+                    <p>Metalcore, blending extreme metal with hardcore punk, gained mainstream success. Djent, characterized by its distinctive guitar sound, emerged as a subgenre of progressive metal.</p>
+                    <div class="spotify-embed">
+                        <iframe src="https://open.spotify.com/embed/track/4E6wpXABj8XosZEPXZz2OK" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
